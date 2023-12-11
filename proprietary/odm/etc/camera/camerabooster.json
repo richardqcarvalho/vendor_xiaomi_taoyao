@@ -1,0 +1,31 @@
+{
+    "version": "1.0",
+    "product": "taoyao",
+    "threshold": {
+            "lowAdj_threshold": 201,
+            "cam_boost_threshold": 2097152,
+            "3rdcam_boost_threshold": 1363148
+        },
+    "support": {
+            "inhibit_3rdprocs_enable": true,
+            "oom_update_support": true
+        },
+    "configs": [
+        {
+            "name": "inhibit_app_list",
+            "config": [
+                "com.google.android.providers.media.module",
+                "com.android.providers.media.module",
+                "com.sohu.inputmethod.sogou.xiaomi",
+                "com.google.android.inputmethod.latin",
+                "com.google.android.googlequicksearchbox:search"
+            ]
+        }
+    ],
+    "threshold_lowmem": {
+            "adj_threshold": 800,
+            "cam_boost_threshold": 1048576,
+            "3rdcam_boost_threshold": 1048576,
+            "skip_task_lower":1
+        }
+}
