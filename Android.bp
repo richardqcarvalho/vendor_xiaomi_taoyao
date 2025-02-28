@@ -6483,7 +6483,7 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
 	prefer: true,
-	soc_specific: true,
+	system_ext_specific: true,
 }
 
 cc_prebuilt_library_shared {
