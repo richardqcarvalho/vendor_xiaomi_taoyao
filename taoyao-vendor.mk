@@ -836,4 +836,19 @@ PRODUCT_PACKAGES += \
     loadalgo \
     sensors.qti \
     sscrpcd \
-    thermal-engine
+    thermal-engine \
+    libsecureui \
+    libQTEEConnector_listener \
+    libsecureui_svcsock \
+    libStDrvInt \
+    vendor.qti.hardware.tui_comm@1.0 \
+    libstagefrighthw \
+    libmm-omxcore \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libplatformconfig \
+    memtrack.default
