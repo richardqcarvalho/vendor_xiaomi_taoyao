@@ -185,8 +185,12 @@ cc_prebuilt_library_shared {
 			srcs: ["proprietary/vendor/lib/libaudio_log_utils.so"],
 			shared_libs: ["libutils", "libcutils", "libexpat", "liblog", "libc++", "libc", "libm", "libdl", ],
 		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libaudio_log_utils.so"],
+			shared_libs: ["libutils", "libcutils", "libexpat", "liblog", "libc++", "libc", "libm", "libdl", ],
+		},
 	},
-	compile_multilib: "32",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -4272,23 +4276,6 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
-	name: "libdrmutils",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libdrmutils.so"],
-			shared_libs: ["libdrm", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
 	name: "libdualcam_optical_zoom_control",
 	owner: "xiaomi",
 	strip: {
@@ -5474,57 +5461,6 @@ cc_prebuilt_library_shared {
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libremosaiclib.so"],
 			shared_libs: ["liblog", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdedrm",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdedrm.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libdrm", "libdrmutils", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdmcore",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdmcore.so"],
-			shared_libs: ["libhidltransport", "libhidlbase", "vendor.xiaomi.hardware.displayfeature@1.0", "libclient2slpi.notifier", "liblog", "libcutils", "libutils", "libdisplaydebug", "libsdmutils", "libdrm", "libdrmutils", "libsdedrm", "libbinder", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	prefer: true,
-	soc_specific: true,
-}
-
-cc_prebuilt_library_shared {
-	name: "libsdmutils",
-	owner: "xiaomi",
-	strip: {
-		none: true,
-	},
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/lib64/libsdmutils.so"],
-			shared_libs: ["liblog", "libcutils", "libutils", "libdisplaydebug", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
 	compile_multilib: "64",
@@ -7064,24 +7000,6 @@ cc_prebuilt_binary {
 }
 
 cc_prebuilt_binary {
-	name: "vendor.qti.hardware.display.composer-service",
-	owner: "xiaomi",
-	target: {
-		android_arm64: {
-			srcs: ["proprietary/vendor/bin/hw/vendor.qti.hardware.display.composer-service"],
-			shared_libs: ["libhidltransport", "vendor.xiaomi.hardware.displayfeature@1.0", "libclient2slpi.notifier", "libbinder", "libhardware", "libhistogram", "libutils", "libcutils", "libsync", "libhidlbase", "liblog", "libfmq", "libhardware_legacy", "libsdmcore", "libqservice", "libqdutils", "libqdMetaData", "libdisplaydebug", "libsdmutils", "libui", "libgrallocutils", "libgpu_tonemapper", "libEGL", "libGLESv2", "libGLESv3", "vendor.qti.hardware.display.composer@3.0", "android.hardware.graphics.composer@2.1", "android.hardware.graphics.composer@2.2", "android.hardware.graphics.composer@2.3", "android.hardware.graphics.composer@2.4", "android.hardware.graphics.mapper@2.0", "android.hardware.graphics.mapper@2.1", "android.hardware.graphics.mapper@3.0", "android.hardware.graphics.allocator@2.0", "android.hardware.graphics.allocator@3.0", "libdisplayconfig.qti", "libdrm", "libc++", "libc", "libm", "libdl", ],
-		},
-	},
-	compile_multilib: "64",
-	strip: {
-		none: true,
-	},
-	prefer: true,
-	relative_install_path: "hw",
-	soc_specific: true,
-}
-
-cc_prebuilt_binary {
 	name: "vendor.qti.hardware.sensorscalibrate@1.0-service",
 	owner: "xiaomi",
 	target: {
@@ -7321,12 +7239,16 @@ cc_prebuilt_library_shared {
 		none: true,
 	},
 	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libstagefrighthw.so"],
+			shared_libs: ["libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
 		android_arm64: {
 			srcs: ["proprietary/vendor/lib64/libstagefrighthw.so"],
 			shared_libs: ["libutils", "libcutils", "libc++", "libc", "libm", "libdl", ],
 		},
 	},
-	compile_multilib: "64",
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }
@@ -7481,6 +7403,27 @@ cc_prebuilt_library_shared {
 	},
 	compile_multilib: "64",
     relative_install_path: "hw",
+	prefer: true,
+	soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libqtigef",
+	owner: "xiaomi",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm: {
+			srcs: ["proprietary/vendor/lib/libqtigef.so"],
+			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libqtigef.so"],
+			shared_libs: ["liblog", "libcutils", "libc++", "libc", "libm", "libdl", ],
+		},
+	},
+	compile_multilib: "both",
 	prefer: true,
 	soc_specific: true,
 }

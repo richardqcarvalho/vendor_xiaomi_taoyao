@@ -827,7 +827,6 @@ PRODUCT_PACKAGES += \
     displayfeature \
     android.hardware.camera.provider@2.4-virtual-camera-service \
     android.hardware.dumpstate@1.1-service.xiaomi \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
@@ -851,4 +850,5 @@ PRODUCT_PACKAGES += \
     libOmxG711Enc \
     libOmxQcelp13Enc \
     libplatformconfig \
-    memtrack.default
+    memtrack.default \
+    libqtigef
