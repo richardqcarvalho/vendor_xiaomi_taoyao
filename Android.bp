@@ -6902,33 +6902,6 @@ android_app_import {
 	product_specific: true,
 }
 
-prebuilt_etc_xml {
-	name: "android.hardware.dumpstate@1.1-service.xiaomi.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/android.hardware.dumpstate@1.1-service.xiaomi.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "fod.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/fod.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
-prebuilt_etc_xml {
-	name: "vendor.xiaomi.hardware.citsensorservice@1.1-service.xml",
-	owner: "xiaomi",
-	src: "proprietary/vendor/etc/vintf/manifest/vendor.xiaomi.hardware.citsensorservice@1.1-service.xml",
-	filename_from_src: true,
-	sub_dir: "vintf/manifest",
-	soc_specific: true,
-}
-
 cc_prebuilt_binary {
 	name: "batterysecret",
 	owner: "xiaomi",

@@ -820,9 +820,6 @@ PRODUCT_PACKAGES += \
     misound_res_spk \
     com.qualcomm.qti.gpudrivers.lahaina.api30 \
     com.xiaomi.ugd \
-    android.hardware.dumpstate@1.1-service.xiaomi.xml \
-    fod.xml \
-    vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
     batterysecret \
     displayfeature \
     android.hardware.camera.provider@2.4-virtual-camera-service \
