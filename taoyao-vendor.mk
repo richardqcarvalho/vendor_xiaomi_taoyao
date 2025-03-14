@@ -395,7 +395,9 @@ PRODUCT_COPY_FILES += \
     vendor/xiaomi/taoyao/proprietary/vendor_ramdisk/lib/firmware/goodix_test_limits_255.csv:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/lib/firmware/goodix_test_limits_255.csv
 
 PRODUCT_PACKAGES += \
+    libaudio_log_utils \
     libcamxexternalformatutils \
+    libstagefrighthw \
     audio.primary.lahaina \
     liba2dpoffload \
     libacdb-fts \
@@ -404,7 +406,6 @@ PRODUCT_PACKAGES += \
     libadiertac \
     libadm \
     libaudcal \
-    libaudio_log_utils \
     libaudiocloudctrl \
     libaudioparsers \
     libaudioroute_ext \
@@ -413,6 +414,7 @@ PRODUCT_PACKAGES += \
     libhdmiedid \
     libhdmipassthru \
     libhfp \
+    libqtigef \
     libresampler \
     libsndmonitor \
     libspkrprot \
@@ -581,6 +583,7 @@ PRODUCT_PACKAGES += \
     com.qti.chi.override \
     displayfeature.default \
     fingerprint.goodix_fod.default \
+    memtrack.default \
     vendor.qti.hardware.sensorscalibrate@1.0-impl \
     vendor.xiaomi.hardware.citsensorservice@1.1-impl \
     vendor.xiaomi.hardware.displayfeature@1.0-impl \
@@ -588,7 +591,15 @@ PRODUCT_PACKAGES += \
     libFace3DTA \
     libFaceDetectpp-0.5.2 \
     libFlickerDet \
+    libOmxAacEnc \
+    libOmxAmrEnc \
+    libOmxCore \
+    libOmxEvrcEnc \
+    libOmxG711Enc \
+    libOmxQcelp13Enc \
+    libQTEEConnector_listener \
     libSNPE \
+    libStDrvInt \
     libTrueSight \
     libaidenoiser \
     libaidenoiserv2 \
@@ -621,9 +632,6 @@ PRODUCT_PACKAGES += \
     libcamxswispiqmodule \
     libcamxswprocessalgo \
     libcamxtintlessalgo \
-    libcapiv2svacnn \
-    libcapiv2svarnn \
-    libcapiv2vop \
     libceres \
     libcert_parse.wpa_s \
     libchilog \
@@ -638,7 +646,6 @@ PRODUCT_PACKAGES += \
     libdisplaydebug \
     libdisplayfeature \
     libdisplayfeatureservice \
-    libdrmutils \
     libdualcam_optical_zoom_control \
     libdualcam_video_optical_zoom \
     libfacedet \
@@ -680,6 +687,7 @@ PRODUCT_PACKAGES += \
     libmiphone_preview_bokeh \
     libmivsock_utils \
     libmm-color-convertor \
+    libmm-omxcore \
     libmmcamera_bestats \
     libmmcamera_cac3 \
     libmmcamera_faceproc \
@@ -699,6 +707,7 @@ PRODUCT_PACKAGES += \
     libopenvx \
     libopestriping \
     libos \
+    libplatformconfig \
     libportrait_blur \
     libpowercore \
     libpreview_beautyeffect \
@@ -709,9 +718,8 @@ PRODUCT_PACKAGES += \
     librelight_only \
     libremosaic_wrapper \
     libremosaiclib \
-    libsdedrm \
-    libsdmcore \
-    libsdmutils \
+    libsecureui \
+    libsecureui_svcsock \
     libsensor_cal_v2 \
     libsensorcal \
     libsensorslog \
@@ -763,6 +771,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.camera.device@3.5 \
     vendor.qti.hardware.camera.postproc@1.0-service-impl \
     vendor.qti.hardware.sensorscalibrate@1.0 \
+    vendor.qti.hardware.tui_comm@1.0 \
     vendor.xiaomi.hardware.campostproc@1.0-service-impl \
     vendor.xiaomi.hardware.campostproc@1.0_vendor \
     vendor.xiaomi.hardware.citsensorservice@1.0 \
@@ -820,14 +829,10 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.displayfeature@1.0 \
     com.qualcomm.qti.gpudrivers.lahaina.api30 \
     com.xiaomi.ugd \
-    android.hardware.dumpstate@1.1-service.xiaomi.xml \
-    fod.xml \
-    vendor.xiaomi.hardware.citsensorservice@1.1-service.xml \
     batterysecret \
     displayfeature \
     android.hardware.camera.provider@2.4-virtual-camera-service \
     android.hardware.dumpstate@1.1-service.xiaomi \
-    vendor.qti.hardware.display.composer-service \
     vendor.qti.hardware.sensorscalibrate@1.0-service \
     vendor.xiaomi.hardware.citsensorservice@1.1-service \
     vendor.xiaomi.hardware.displayfeature@1.0-service \
