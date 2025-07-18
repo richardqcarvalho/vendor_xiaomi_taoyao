@@ -27855,6 +27855,7 @@ android_app_import {
     apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
     overrides: [
         "Aperture",
+        "Camera2",
     ],
     certificate: "platform",
     dex_preopt: {
