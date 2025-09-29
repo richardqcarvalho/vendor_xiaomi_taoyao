@@ -502,10 +502,6 @@ PRODUCT_PACKAGES += \
     vendor.xiaomi.hardware.misys@2.0 \
     vendor.xiaomi.hardware.misys@3.0 \
     vendor.xiaomi.hardware.misys@4.0 \
-    libcamera_algoup_jni.xiaomi \
-    libcamera_mianode_jni.xiaomi \
-    libmicampostproc_client \
-    vendor.xiaomi.hardware.campostproc@1.0 \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -1346,7 +1342,6 @@ PRODUCT_PACKAGES += \
     vendor.dolby_sp.hardware.dmssp@2.0-impl \
     vendor.dolby_sp.hardware.dmssp@2.0 \
     vendor.dolby_v3_6.hardware.dms360@2.0-impl \
-    MiuiCamera \
     CACertService \
     CneApp \
     IWlanService \
