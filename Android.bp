@@ -14175,6 +14175,8 @@ cc_prebuilt_library_shared {
                 "vendor.qti.hardware.display.mapper@4.0",
                 "vendor.qti.hardware.display.mapperextensions@1.1",
                 "libdisplayconfig.qti",
+                "libmisight",
+                "libbinder_ndk",
                 "libc++",
                 "libc",
                 "libm",
